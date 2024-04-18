@@ -44,3 +44,10 @@ Use `go test` command to run feature tests since godog's cli is deprecated.
 |   |   |   |-- /test
 |   |   |-- /util   
 ```
+
+## Swagger Formatting
+```sh
+make format_swagger
+#or  
+task format_swagger
+```
