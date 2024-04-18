@@ -27,13 +27,13 @@ var (
 	loginHandler = rest.InitLogin(loginService, jwtService)
 )
 
-// @title hexagonal-architecture
-// @version         0.1.0
-// @contact.name   Yinebe T.
-// @contact.url    www.linkedin.com/in/yinebeb-tariku
-// @contact.email  yintar5@gmail.com
-// @host localhost
-// @BasePath  /v1
+//	@title			hexagonal-architecture
+//	@version		0.1.0
+//	@contact.name	Yinebe T.
+//	@contact.url	www.linkedin.com/in/yinebeb-tariku
+//	@contact.email	yintar5@gmail.com
+//	@host			localhost
+//	@BasePath		/v1
 func main() {
 	configOutput()
 

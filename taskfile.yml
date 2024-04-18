@@ -1,0 +1,19 @@
+version: '3'
+
+tasks:
+  check_swag_installed:
+    description: "Check if Swag is installed"
+    cmd: "SWAG_INSTALLED=$(shell command -v swag 2> /dev/null)"
+  format_swagger:
+    description: "Format Swagger configuration"
+    cmd: |
+      if [ ! "$(SWAG_INSTALLED)" ]; then
+        echo "Swag is not installed. Please run 'make swag_install' to install swag"
+      else
+        echo "Formatting swagger files"
+        swag fmt
+      fi
+
+  swag_install:
+    description: "Install swag"
+    cmd: "go install github.com/swaggo/swag/cmd/swag@latest"
